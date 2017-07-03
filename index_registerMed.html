@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head ng-app="hplus">
+    <title>HealthPlus</title>
+    <!-- <script src="../app/libraries/angular.min.js"></script> -->
+    <script src="dist/app.bundle.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col col-md-10 col-md-offset-1 header__background">
+
+        <div class="col col-md-8">
+          <span class="header__app-text">HealthPlus</span>
+        </div>
+
+        <div class="col col-md-4 header__user-container">
+          <span class="header__user-alignment">
+            <span class="header__user-name">James Appleseed</span>
+            <span class="header__user-title">Administrator</span>
+          </span>
+
+          <span class="fa-stack fa-lg header__user-alignment">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row navbar__background">        
+      <div class="col col-md-10 col-md-offset-1">
+
+        <div class="col col-md-8">
+          <div class="navbar__btn navbar__btn--selected">
+            Diseases
+          </div>
+          <div class="navbar__btn">
+            Medicines
+          </div>
+        </div>
+
+        <div class="col col-md-4 navbar__action-container">          
+          <div class="navbar__btn navbar__btn--action">
+            Register Disease
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-8 col-md-offset-1">
+        <h1>Register Medicine</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-2 col-md-offset-1">
+
+        <div class="row">
+          <div class="col col-md-12">
+            <span class="subtitle">
+				Name of Medicine
+			</span>
+			<input type = "text" value = "RiteMed Metformin">
+          </div>
+          <br><br>
+        </div>
+		<div class="row">
+          <div class="col col-md-12">
+            <span class="subtitle">
+				Price
+			</span>
+          </div>
+		  <div class="col col-md-11 col-md-offset-1">
+              PHP : <input type = "text" id = "priceInputField" value = "3.75">
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="col col-md-9">
+		<div class="col col-md-12">
+          Description:
+        </div>
+		<div class="col col-md-12">
+          <textarea id="descMed" rows="8" cols = "50" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut lorem quis dolor porttitor accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae erat viverra, vestibulum enim id, pulvinar lectus. Sed volutpat tristique tristique. Vivamus turpis diam, consequat vel sagittis quis, convallis quis sem.</textarea>
+        </div>
+      </div>
+	  <div class="col col-md-1 col-md-offset-1" id = "saveMed">
+        <button>Save</button>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
